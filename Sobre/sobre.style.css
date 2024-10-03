@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: linear-gradient(to right, #F25157 0%, #F38A61 100%);
+    height: auto;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 0.3fr 0.7fr;
+    gap: 10px;
+}
+
+.logo {
+    margin-left: 120px;
+    padding: 0; 
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 8%;
+    text-decoration: none;
+    font-size: 120%;
+    font-weight: bold;
+}
