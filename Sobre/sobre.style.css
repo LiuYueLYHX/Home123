@@ -33,3 +33,208 @@ nav a {
     font-size: 120%;
     font-weight: bold;
 }
+
+main{
+    background-color: #FFFDF2;
+    height: 300vh;
+    width: 178.89vh;
+}
+.boxONU{
+    display: grid;
+    height: 100%;
+    height: 200vh;
+}
+.backgroundImage1 {
+    
+    width :100%;
+    height: 46%;
+    background-image: url("C:\\Users\\eduar\\OneDrive\\桌面\\Home\\images\\home2\\sobre1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.filter{
+    background: linear-gradient(180deg, rgba(22, 168, 171, 0.7) 0%, rgba(243, 138, 97, 0.7) 100%);
+    height: 100%; /* 高度和图片相同 */
+}
+.boxSobre {
+    display: grid;
+    grid-template-columns: 55% 45%; /* 定义列的比例 */
+    align-items: center; /* 垂直居中 */
+}
+
+.ImageONU {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* 确保内容右对齐 */
+    padding-right: 50px;
+}
+
+.sobrebox {
+    display: grid; /* 使用 Grid 布局 */
+    grid-template-rows: 45% 55%; /* 定义两行，各占50% */
+    height: 200vh; /* 设置高度为视口高度 */
+}
+
+.sobrepages1 {
+    position: relative; /* 相对定位 */
+    width: 100%; /* 自适应宽度 */
+    margin-left: 10%; /* 左边距 */
+    font-family: 'FONTSPRING DEMO - Salvatore Black', sans-serif;
+    font-weight: 800;
+    font-size: 39px;
+    line-height: 30px; /* 行高调整 */
+    color: #FFFFFF;
+    margin-top: 20%; /* 上边距，可能需要调整 */
+}
+
+.sobrepages2 {
+    display: flex; /* 使用 Flexbox 布局 */
+    flex-direction: column; /* 垂直排列 */
+    align-items: flex-start; /* 左对齐 */
+    justify-content: flex-start; /* 顶部对齐 */
+    height: 100%; /* 确保高度 */
+    padding: 10px; /* 添加一些内边距以避免内容紧贴边缘 */
+}
+
+.sobrepages2text1 {
+    margin-top: 10%;
+    margin-left: 7%;
+    font-family: 'Neurial Grotesk';
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 48px;
+    color: #16A8AB;
+}
+
+.sobrepages2text2 {
+    margin-top: 20px; /* 更改为 px */
+    margin-left: 10%;
+    font-family: 'Neurial Grotesk';
+    font-weight: 800;
+    font-size: 27px;
+    line-height: 10px;
+    color: #000000;
+}
+
+.sobrepages2text3 {
+    margin-top: 40px; /* 更改为 px */
+    margin-left: 15%;
+    font-family: 'Neurial Grotesk';
+    font-weight: 800;
+    font-size: 64px;
+    line-height: 77px;
+    color: #F25157;
+}
+.footer {
+    height: auto;
+    position:absolute;
+}
+
+.footer-row {
+    background: linear-gradient(to right, #F25157 0%, #F38A61 100%);
+    padding: 10px;
+}
+
+.footer-col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+}
+
+.footer a {
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    font-size: 30px;
+    text-decoration: none; /* 移除下划线 */
+}
+
+:root {
+    --primary-color: #F25157;
+    --secondary-color: #40BFC1;
+    --background-color: #FFFDF2;
+    --text-color: #000000;
+    --text-color-light: #FFFFFF;
+}
+
+.sobrepages3 {
+    height: 100vh; /* 增加高度 */
+    width: 100%;
+    background-color: var(--background-color);
+    position: relative;
+}
+
+.desenvolvedor {
+    background: linear-gradient(90deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    height: 30%; /* 可根据需要调整 */
+    position: relative;
+    z-index: 1; 
+    padding: 20px; /* 添加内边距 */
+}
+
+.sobrepages3text1, .sobrepages3text2 {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.sobrepages3text1 {
+    top: 15%;
+    font-size: 50px;
+    color: var(--text-color);
+}
+
+.sobrepages3text2 {
+    top: 40%;
+    font-size: 32px;
+    color: var(--text-color-light);
+}
+
+.containersobre {
+    position: absolute;
+    top: 60%; /* 向下移动内容 */
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+}
+
+.row, .rowcontainer {
+    display: flex;
+}
+
+.col {
+    flex: 1;
+    margin: 5px;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Frankfurter Medium Std';
+    font-weight: 400;
+    color: var(--text-color);
+}
+
+.rowcontainer {
+    margin-top: 10px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .sobrepages3text1 {
+        font-size: 30px;
+    }
+    .sobrepages3text2 {
+        font-size: 24px;
+    }
+}
